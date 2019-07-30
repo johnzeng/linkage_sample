@@ -1,6 +1,6 @@
 a.out: libab.a libcd.a
-	- clang++ main.o libab.a libcd.a
-	- clang++ main.o libcd.a libab.a
+	- g++ main.o libab.a libcd.a
+	- g++ main.o libcd.a libab.a
 
 libab.a: a.o b.o
 	ar csr libab.a a.o b.o
